@@ -1,18 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 <head>
-  <meta charset="UTF-8">
-  <title>Weather App</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تطبيق الطقس</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Weather App</h1>
-    <input type="text" id="cityInput" placeholder="Enter city name" />
-    <button onclick="getWeather()">Get Weather</button>
-    <div id="weatherResult"></div>
-  </div>
-
-  <script src="script.js"></script>
+    <div class="weather-card">
+        <h1>تطبيق الطقس</h1>
+        <div class="input-group">
+            <input type="text" id="cityInput" placeholder="ادخل اسم المدينة">
+            <button onclick="fetchWeather()">عرض الطقس</button>
+        </div>
+        <div id="weatherInfo">
+            <!-- هنا سيتم عرض بيانات الطقس -->
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
